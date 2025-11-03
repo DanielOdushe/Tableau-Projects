@@ -1,0 +1,29 @@
+# Tableau
+*.twb.tmp
+*.log
+*.hyper
+.twbx_cache/
+*.twb.tmp
+*.tds
+*.tdsx
+*.twbx
+
+# Python / Jupyter (if you store notebooks)
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# System
+.DS_Store
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+
+# Windows temp / caches
+AppData/
+Local Settings/
+*.tmp
+
+# Large outputs / data (adjust to your workflow)
+Data/
+Outputs/
