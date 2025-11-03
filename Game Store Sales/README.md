@@ -65,12 +65,11 @@ This Tableau dashboard summarizes global video game sales across products, platf
 ---
 
 ## Technical notes & key calculated fields
-Suggested Tableau calculated fields and logic (paste into your workbook):
-Total Sales = SUM([Sales])
-Sales Share (%) = SUM([Sales]) / TOTAL(SUM([Sales]))
-Cumulative Sales (by Product) = RUNNING_SUM(SUM([Sales])) // for time-based cumulative charts
-Genre Rank = RANK_UNIQUE(SUM([Sales]), 'desc')
-Platform Sales Zone = IF SUM([Sales]) <= 100 THEN 'Low'
-ELSEIF SUM([Sales]) <= 300 THEN 'Medium'
-ELSE 'High' END // adjust thresholds to your units
+### Suggested Tableau calculated fields and logic (paste into your workbook):
+
+#### Total Sales = SUM([Sales])
+#### Sales Share (%) = SUM([Sales]) / TOTAL(SUM([Sales]))
+#### Cumulative Sales (by Product) = RUNNING_SUM(SUM([Sales])) // for time-based cumulative charts
+#### Genre Rank = RANK_UNIQUE(SUM([Sales]), 'desc')
+#### Platform Sales Zone = IF SUM([Sales]) <= 100 THEN 'Low' ELSEIF SUM([Sales]) <= 300 THEN 'Medium'  ELSE 'High' END // adjust thresholds to your units
 
