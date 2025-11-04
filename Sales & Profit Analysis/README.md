@@ -33,9 +33,3 @@ This Tableau dashboard analyzes sales and profit performance across time, geogra
 - **Sale by Segment small multiples:** channel-level performance and timing.  
 - **Sale by Category small multiples:** product-category timing and profit behavior.
 
-## Technical notes & calculated fields
-Use these Tableau calculated fields:
-Profit Ratio = SUM([Profit]) / SUM([Sales])
-Order Profitable? = IF SUM([Profit]) >= 0 THEN 'Profitable' ELSE 'Unprofitable' END
-Sale per Customer = SUM([Sales]) / COUNTD([Customer ID])
-Profit per Order = SUM([Profit]) / COUNT([Order ID]) // adjust COUNT vs COUNTD to match grain
